@@ -1,0 +1,27 @@
+{
+    "id": "A0F6013D",
+    "path": "~/R projekter/koda-member-projection/koda_member_projection.R",
+    "project_path": "koda_member_projection.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1744024463168.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "173,0",
+        "scrollLine": "129"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1744025510,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1744025510580,
+    "read_only": false,
+    "read_only_alternatives": []
+}
