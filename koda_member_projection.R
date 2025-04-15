@@ -93,6 +93,12 @@ ggplot() +
        x = "År", y = "Nyindmeldte, kvindelige koda-medlemmer (%)") +
   theme(panel.grid.major = element_line(color = "#eaeaea"), panel.grid.minor = element_blank())
 
+# Print year in which upper bound hits 50 % female representation (best case)
+ci_results %>% 
+  filter(upper > 50) %>%
+  pull(year) %>%
+  head(1)
+
 # ==============================================================================
 # >> 7. Forecast Total Female Membership
 # ==============================================================================
@@ -140,7 +146,12 @@ while ((tail(data$female_members_median, 1) / tail(data$total_human_members, 1))
     female_members_upper     = projection$upper$female_members
   ))
 }
-year_50_percent_female <- max(data$year)
+
+# Print year in which upper bound hits 50 % female representation (best case)
+data %>%
+  filter(female_members_pct_upper > 50) %>%
+  pull(year) %>%
+  head(1)
 
 # ==============================================================================
 # >> 8. Final Visualization: Historical vs. Predicted Membership
